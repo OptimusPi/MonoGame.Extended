@@ -31,7 +31,8 @@ namespace MonoGame.Extended.ViewportAdapters
         /// https://github.com/mono/MonoGame/issues/4018
         /// </summary>
         public BoxingViewportAdapter(GameWindow window, GraphicsDevice graphicsDevice, int virtualWidth, int virtualHeight, int horizontalBleed, int verticalBleed)
-            : base(graphicsDevice, virtualWidth, virtualHeight) {
+            : base(graphicsDevice, virtualWidth, virtualHeight)
+        {
             _window = window;
             window.ClientSizeChanged += OnClientSizeChanged;
             HorizontalBleed = horizontalBleed;
@@ -44,7 +45,8 @@ namespace MonoGame.Extended.ViewportAdapters
         /// https://github.com/mono/MonoGame/issues/4018
         /// </summary>
         public BoxingViewportAdapter(GameWindow window, GraphicsDevice graphicsDevice, int virtualWidth, int virtualHeight)
-            : this(window, graphicsDevice, virtualWidth, virtualHeight, 0, 0) {
+            : this(window, graphicsDevice, virtualWidth, virtualHeight, 0, 0)
+        {
         }
 
         /// <summary>
@@ -66,7 +68,8 @@ namespace MonoGame.Extended.ViewportAdapters
         /// This constructor will be made obsolete and eventually removed once the bug has been fixed.
         /// </summary>
         public BoxingViewportAdapter(GameWindow window, GraphicsDeviceManager graphicsDeviceManager, int virtualWidth, int virtualHeight)
-            : this(window, graphicsDeviceManager, virtualWidth, virtualHeight, 0, 0) {
+            : this(window, graphicsDeviceManager, virtualWidth, virtualHeight, 0, 0)
+        {
         }
 
         public BoxingMode BoxingMode { get; private set; }
@@ -96,7 +99,7 @@ namespace MonoGame.Extended.ViewportAdapters
             {
                 BoxingMode = BoxingMode.Letterbox;
             }
-            else 
+            else
             {
                 BoxingMode = BoxingMode.None;
             }

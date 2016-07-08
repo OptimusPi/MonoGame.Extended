@@ -7,7 +7,6 @@ using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended.Gui.Controls;
 using MonoGame.Extended.InputListeners;
 using MonoGame.Extended.ViewportAdapters;
-using Newtonsoft.Json;
 
 namespace MonoGame.Extended.Gui
 {
